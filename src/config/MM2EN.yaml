@@ -22,12 +22,12 @@ dataset: MHClipEN
 type: default
 patience: 5
 device: cuda:1
-lambda_cluster: 0.38
-lambda_pre: 52
 k: 63
 soft_threshold_alpha: 35
 lambda_diversity_intra: 0.80
 entropy_threshold: 0.18
 adapt_steps: 3
+lambda_cluster: 0.38
+lambda_pre: 52
 
 pretrained_model: '/source_model/HateMM.pth'
