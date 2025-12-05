@@ -1,4 +1,4 @@
-# Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Hate Video with Test-Time Adaptation [AAAI26 Oral]
+# [AAAI26 Oral] Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Hate Video with Test-Time Adaptation
 Official github repository for SCANNER：
 Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Hate Video with Test-Time Adaptation
 ## Dataset
