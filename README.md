@@ -1,6 +1,6 @@
-# Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Malicious Content with Test-Time Adaptation
+# Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Hate Video with Test-Time Adaptation
 Official github repository for SCANNER：
-Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Malicious Content with Test-Time Adaptation
+Shedding the Facades, Connecting the Domains: Detecting Shifting Multimodal Hate Video with Test-Time Adaptation
 ## Dataset
 
 You can obtain the datasets from the following project sites.
