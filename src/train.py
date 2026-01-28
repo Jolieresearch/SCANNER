@@ -19,7 +19,7 @@ from omegaconf import DictConfig, OmegaConf
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from pathlib import Path
-from model.MLP.model.SCANNER import MLPWithClustering, configure_model
+from model.SCANNER.model.SCANNER import SCANNERWithClustering, configure_model
 
 from utils.core_utils import (
     get_collator,
@@ -92,7 +92,7 @@ class Trainer():
         trainables = [p for p in self.model.parameters() if p.requires_grad]
         print('Total trainable parameter number is : {:.3f} million'.format(sum(p.numel() for p in trainables) / 1e6))
 
-        self.wrapper = MLPWithClustering(
+        self.wrapper = SCANNERWithClustering(
             source_model=self.model,
             device=cfg.device,
             k=cfg.k, 

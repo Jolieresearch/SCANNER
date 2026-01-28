@@ -27,7 +27,7 @@ def configure_model(model):
     print(f"TTA - Total {len(trainable_params)} trainable parameters found (Encoder is frozen).")
     return model
 
-class MLPWithClustering(nn.Module):
+class SCANNERWithClustering(nn.Module):
     def __init__(self, source_model, device, k=15, lambda_cluster=6, momentum=0.9, 
                  cluster_percentile=0.6, soft_threshold_alpha=5.0, lambda_diversity_intra=0.1, min_cluster_size=3):
         super().__init__()

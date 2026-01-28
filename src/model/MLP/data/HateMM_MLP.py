@@ -7,9 +7,9 @@ import os
 from ...Base.data.HateMM_base import HateMM_Dataset
 
 
-class HateMM_MLP_Dataset(HateMM_Dataset):
+class HateMM_SCANNER_Dataset(HateMM_Dataset):
     def __init__(self, fold: int, split: str, task: str, **kargs):
-        super(HateMM_MLP_Dataset, self).__init__()
+        super(HateMM_SCANNER_Dataset, self).__init__()
         self.ocr_text = pd.read_json('data/HateMM/ocr.jsonl', lines=True)
         self.data = self._get_data(fold, split, task)
         self.frame_path = Path('data/HateMM/frames_16')
@@ -47,7 +47,7 @@ class HateMM_MLP_Dataset(HateMM_Dataset):
         }
 
 
-class HateMM_MLP_Collator:
+class HateMM_SCANNER_Collator:
     def __init__(self, **kargs):
         pass
 

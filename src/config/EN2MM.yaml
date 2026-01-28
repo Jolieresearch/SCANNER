@@ -17,7 +17,7 @@ sche:
 num_epoch: 1
 batch_size: 128
 seed: 2025
-model: MLP
+model: SCANNER
 dataset: HateMM
 type: default
 patience: 5

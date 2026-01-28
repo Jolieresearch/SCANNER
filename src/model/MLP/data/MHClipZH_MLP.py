@@ -7,9 +7,9 @@ import os
 from ...Base.data.MHClipZH_base import MHClipZH_Dataset
 
 
-class MHClipZH_MLP_Dataset(MHClipZH_Dataset):
+class MHClipZH_SCANNER_Dataset(MHClipZH_Dataset):
     def __init__(self, fold: int, split: str, task: str, **kargs):
-        super(MHClipZH_MLP_Dataset, self).__init__()
+        super(MHClipZH_SCANNER_Dataset, self).__init__()
         self.ocr_text = pd.read_json('data/MultiHateClip/zh/ocr.jsonl', lines=True)
         self.data = self._get_data(fold, split, task)
         self.frame_path = Path('data/MultiHateClip/zh/frames_16')
@@ -47,7 +47,7 @@ class MHClipZH_MLP_Dataset(MHClipZH_Dataset):
         }
 
 
-class MHClipZH_MLP_Collator:
+class MHClipZH_SCANNER_Collator:
     def __init__(self, **kargs):
         pass
 

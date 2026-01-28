@@ -2,12 +2,12 @@ import torch
 import torch.nn as nn
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-from model.MLP.modules.transformer import TransformerEncoder
+from model.SCANNER.modules.transformer import TransformerEncoder
 from sentence_transformers import SentenceTransformer
 
-class MLP(nn.Module):
+class SCANNER(nn.Module):
     def __init__(self, text_encoder: str, image_encoder: str, dataset: str, fea_dim=128, dropout=0.1, task='binary', **kargs):
-        super(MLP, self).__init__()
+        super(SCANNER, self).__init__()
         
         self.text_encoder = SentenceTransformer(text_encoder).requires_grad_(False)
         self.image_encoder = SentenceTransformer(image_encoder).requires_grad_(False)

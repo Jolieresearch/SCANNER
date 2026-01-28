@@ -7,9 +7,9 @@ import os
 from ...Base.data.MHClipEN_base import MHClipEN_Dataset
 
 
-class MHClipEN_MLP_Dataset(MHClipEN_Dataset):
+class MHClipEN_SCANNER_Dataset(MHClipEN_Dataset):
     def __init__(self, fold: int, split: str, task: str, **kargs):
-        super(MHClipEN_MLP_Dataset, self).__init__()
+        super(MHClipEN_SCANNER_Dataset, self).__init__()
         self.ocr_text = pd.read_json('data/MultiHateClip/en/ocr.jsonl', lines=True)
         self.data = self._get_data(fold, split, task)
         self.frame_path = Path('data/MultiHateClip/en/frames_16')
@@ -56,7 +56,7 @@ class MHClipEN_MLP_Dataset(MHClipEN_Dataset):
         # }
 
 
-class MHClipEN_MLP_Collator:
+class MHClipEN_SCANNER_Collator:
     def __init__(self, **kargs):
         # self.tokenizer = AutoTokenizer.from_pretrained(encoder_name)
         # self.processor = AutoProcessor.from_pretrained(encoder_name, trust_remote_code=True)
